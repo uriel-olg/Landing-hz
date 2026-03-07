@@ -7,7 +7,7 @@ const feats = [
 
 export default function Features() {
     return (
-        <section className="py-20 text-white bg-[#0d1b2a]">
+        <section className="py-20 text-white ">
         <div className="max-w-7xl mx-auto px-4">
 
             <h2 className="text-3xl font-bold mb-10 text-center">¿Por qué elegirnos?</h2>

@@ -45,7 +45,7 @@ export default function PricingSoftware() {
     ];
 
     return (
-        <section className="bg-[#142a41] py-16 px-4">
+        <section className=" py-16 px-4">
         <h2 className="text-4xl font-bold text-center mb-10 text-white">
             Servicios de Desarrollo y Soporte
         </h2>

@@ -6,7 +6,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section className="py-20 bg-[#0d1b2a] text-white">
+        <section className="py-20 text-white">
         <div className="max-w-7xl mx-auto px-4">
 
             <div className="grid md:grid-cols-3 gap-6">

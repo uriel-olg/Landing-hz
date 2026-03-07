@@ -1,6 +1,8 @@
+const phone = 542604230590
+
 export default function Hero() {
     return (
-        <section className="h-full w-full text-white py-10 bg-[#142a41] ">
+        <section className="h-full w-full text-white py-10  ">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-4 justify-center items-center">
 
             <div>
@@ -14,9 +16,9 @@ export default function Hero() {
                 </p>
 
                 <div className="flex gap-4 mt-6">
-                    <button className="bg-blue-600 px-5 py-3 rounded-md hover:bg-blue-700" onClick={()=>{"https://wa.me/542604230590"}}>
+                    <a className="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-400 active:scale-95 active:bg-blue-700 transition" href={`https://wa.me/${phone}?text=Hola%20quiero%20solicitar%20un%20presupuesto`}>
                     Solicitar Presupuesto
-                    </button>
+                    </a>
                     <button className="bg-white/10 px-5 py-3 rounded-md backdrop-blur hover:bg-white/20">
                     Ver Servicios
                     </button>
