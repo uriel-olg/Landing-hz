@@ -1,8 +1,8 @@
 const services = [
-    { title: "Software a Medida", img: "./public/icon/mantenimiento.png", desc: "Desarrollo de software y sistemas personalizados." },
-    { title: "Soporte Técnico", img: "./public/icon/soporte2.png", desc: "Asistencia remota o presencial para resolver problemas." },
-    { title: "Mantenimiento Preventivo", img:"./public/icon/certificado.png", desc: "Evita fallos técnicos con mantenimiento regular." },
-    { title: "Ensamble y Configuración", img:"./public/icon/ensamble2.png", desc: "Armado, instalación y puesta en marcha." },
+    { title: "Software a Medida", img: "./public/mantenimiento.png", desc: "Desarrollo de software y sistemas personalizados." },
+    { title: "Soporte Técnico", img: "./public/soporte2.png", desc: "Asistencia remota o presencial para resolver problemas." },
+    { title: "Mantenimiento Preventivo", img:"./public/certificado.png", desc: "Evita fallos técnicos con mantenimiento regular." },
+    { title: "Ensamble y Configuración", img:"./public/ensamble2.png", desc: "Armado, instalación y puesta en marcha." },
 ];
 
 export default function Services() {
