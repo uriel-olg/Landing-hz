@@ -1,8 +1,8 @@
 const feats = [
-    { title: "Respuesta Inmediata",img:"./public/reloj.png" ,desc: "Atención rápida para resolver problemas." },
-    { title: "Técnicos Certificados",img:"./public/chico.png" ,desc: "Profesionales con experiencia y certificaciones." },
-    { title: "Desarrollo Escalable",img:"./public/coete.png" ,desc: "Soluciones modernas listas para crecer." },
-    { title: "Precios Competitivos",img:"./public/monedas.png" ,desc: "La mejor relación calidad-precio del mercado." },
+    { title: "Respuesta Inmediata",img:"./reloj.png" ,desc: "Atención rápida para resolver problemas." },
+    { title: "Técnicos Certificados",img:"./chico.png" ,desc: "Profesionales con experiencia y certificaciones." },
+    { title: "Desarrollo Escalable",img:"./coete.png" ,desc: "Soluciones modernas listas para crecer." },
+    { title: "Precios Competitivos",img:"./monedas.png" ,desc: "La mejor relación calidad-precio del mercado." },
 ];
 
 export default function Features() {
