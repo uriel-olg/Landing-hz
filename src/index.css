@@ -1,1 +1,25 @@
 @import "tailwindcss";
+@tailwind utilities;
+
+@keyframes slideDown {
+    0% {
+    opacity: 0;
+    transform: translateY(-10px);
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.animate-slideDown {
+    animation: slideDown 0.30s ease-out forwards;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fade {
+  animation: fade 0.25s ease-out;
+}

@@ -1,5 +1,8 @@
+const phone = 542604230590;
+
+
 export default function PricingSoftware() {
-  const services = [
+    const services = [
         {
         name: "Landing Page Profesional",
         price: "$75.000",
@@ -76,13 +79,12 @@ export default function PricingSoftware() {
                 className={`
                     mt-6 w-full py-3 rounded-lg font-semibold transition
                     ${plan.highlight ? "bg-blue-600 hover:bg-blue-700" : "bg-blue-500 hover:bg-blue-600"}
-                `}
-                >
-                {plan.button}
+                `}>
+                    <a href={`https://wa.me/${phone}?text=Hola%20quiero%20solicitar%20un%20presupuesto%20:%20${plan.name}`}>{plan.button}</a>
                 </button>
             </div>
             ))}
         </div>
         </section>
     );
-}
+}   
