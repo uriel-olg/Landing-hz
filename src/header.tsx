@@ -29,7 +29,7 @@ export default function Header() {
             </button>
 
             {open && (
-                <nav className="absolute left-0 top-full w-1/4 bg-[#09131e] p-4 flex flex-col gap-4  animate-fade">
+                <nav className="absolute left-80 top-full w-1/4 bg-[#09131e] p-4 flex flex-col gap-4  animate-fade">
             <a href="#servicios" className="hover:text-blue-400">Servicios</a>
             <a href="#proyectos" className="hover:text-blue-400">Proyectos</a>
             <a href="#contacto" className="hover:text-blue-400">Contacto</a>
