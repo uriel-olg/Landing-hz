@@ -77,39 +77,39 @@ export default function Hero() {
 
             {/* Estadísticas */}
 
-            <div className="mt-14 grid grid-cols-3 gap-5">
+            <div className="mt-14 grid grid-cols-3 gap-5" >
 
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
 
-                <h3 className="text-3xl font-bold text-blue-400">
-                  +50
+                <h3 className="text-center wrap-anywhere md:text-3xl font-bold text-blue-400">
+                  Atencion  
                 </h3>
 
-                <p className="mt-2 text-sm text-gray-400">
-                  Proyectos
+                <p className="text-center mt-2 md:text-sm text-gray-400">
+                  24hs
                 </p>
 
               </div>
 
               <div className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
 
-                <h3 className="text-3xl font-bold text-blue-400">
+                <h3 className="text-center md:text-3xl font-bold text-blue-400">
                   24/7
                 </h3>
 
-                <p className="mt-2 text-sm text-gray-400">
+                <p className="wrap-anywhere mt-2 md:text-sm text-gray-400">
                   Soporte
                 </p>
 
               </div>
 
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+              <div className="flex flex-col h-full rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
 
-                <h3 className="text-3xl font-bold text-blue-400">
+                <h3 className="md:text-3xl font-bold text-blue-400 ">
                   100%
                 </h3>
 
-                <p className="mt-2 text-sm text-gray-400">
+                <p className="wrap-anywhere mt-2 md:text-sm text-gray-400 ">
                   Personalizado
                 </p>
 

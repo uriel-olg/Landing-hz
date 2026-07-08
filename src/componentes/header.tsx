@@ -11,7 +11,7 @@ export default function Header() {
 
   const phone = 542604230590
 
-  
+
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-[#09131e]/80 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
@@ -91,6 +91,15 @@ export default function Header() {
         {open && (
           <nav className="absolute right-6 top-24 flex w-64 flex-col gap-5 rounded-2xl border border-white/10 bg-[#111827] p-6 shadow-2xl md:hidden">
 
+
+            <a
+              href="#home"
+              className="text-gray-300 transition hover:text-white"
+            >
+              Home
+            </a>
+
+
             <a
               href="#servicios"
               className="text-gray-300 transition hover:text-white"
@@ -99,10 +108,17 @@ export default function Header() {
             </a>
 
             <a
-              href="#proyectos"
+              href="#procesos"
               className="text-gray-300 transition hover:text-white"
             >
-              Proyectos
+              Procesos
+            </a>
+
+            <a
+              href="#Tecnologias"
+              className="text-gray-300 transition hover:text-white"
+            >
+              Tecnologias
             </a>
 
             <a
@@ -113,7 +129,7 @@ export default function Header() {
             </a>
 
             <button className="mt-2 rounded-xl bg-blue-600 py-3 font-semibold text-white transition hover:bg-blue-500">
-              Solicitar presupuesto
+              Contactanos
             </button>
 
           </nav>
