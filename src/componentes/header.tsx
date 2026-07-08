@@ -6,10 +6,12 @@ export default function Header() {
   const [activo,setActivo] = useState<"Servicios" | "Procesos" | "Tecnologias" | "Contacto" | "Home"> ("Home")
 
   const navList = [
-    "Servicios","Procesos","Tecnologias","Contacto"
+    "Home","Servicios","Procesos","Tecnologias","Contacto"
   ] as const
 
+  const phone = 542604230590
 
+  
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-[#09131e]/80 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
@@ -55,10 +57,9 @@ export default function Header() {
     )
   })}
   
-  <button className="rounded-xl bg-blue-500/10 px-5 py-2.5 font-semibold border border-blue-500/20 text-white transition hover:bg-blue-500/30">
-    Hablemos 
-  </button>
-
+  <a href={`https://wa.me/${phone}?text=Hola,%20quiero%20solicitar%20un%20presupuesto`} className="rounded-xl bg-blue-500/10 px-5 py-2.5 font-semibold border border-blue-500/20 text-white transition hover:bg-blue-500/30">
+    Contactanos
+  </a>
 
         </nav>
 

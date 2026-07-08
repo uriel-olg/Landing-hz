@@ -181,8 +181,8 @@ export default function CTA() {
                   items-center
                   rounded-xl
                   border
-                  border-blue-500/20
-                  bg-blue-500/10
+                  border-blue-500/30
+                  bg-blue-500/5
                   px-8
                   py-4
                   font-medium

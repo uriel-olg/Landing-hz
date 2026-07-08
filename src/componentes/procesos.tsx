@@ -71,7 +71,7 @@ export default function Procesos() {
 
           {/* Línea */}
 
-          <div className="absolute top-10 left-0 w-full h-[2px] bg-white/10 hidden lg:block"></div>
+          <div className="absolute top-10 left-1/2 -translate-x-1/2 w-5/6 h-[2px] bg-blue-500/40 hidden lg:block"></div>
 
           <div className="grid lg:grid-cols-4 gap-12 relative">
 
@@ -98,7 +98,7 @@ export default function Procesos() {
                   justify-center
                   rounded-full
                   border
-                  border-blue-500/20
+                  border-blue-500/30
                   bg-[#111827]
                   transition-all
                   duration-300
@@ -116,7 +116,7 @@ export default function Procesos() {
 
                   {/* Número */}
 
-                  <span className="mt-6 block text-sm font-semibold tracking-[0.3em] text-blue-400">
+                  <span className="mt-6 block text-m font-semibold tracking-[0.3em] text-blue-400">
                     {step.number}
                   </span>
 
