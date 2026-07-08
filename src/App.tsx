@@ -20,7 +20,7 @@ function App() {
       <Procesos></Procesos>
       <Tecnologias></Tecnologias>
       <Cta></Cta>
-      <Contact wsp="2604230590" facebook='asd' instagram='asd' email='olguriel@gmail.com'/>
+      <Contact />
       <Footer />
     </>
   );

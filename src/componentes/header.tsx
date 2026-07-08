@@ -7,7 +7,7 @@ export default function Header() {
 
   const navList = [
     "Servicios","Procesos","Tecnologias","Contacto"
-  ]
+  ] as const
 
 
   return (
@@ -58,6 +58,7 @@ export default function Header() {
   <button className="rounded-xl bg-blue-500/10 px-5 py-2.5 font-semibold border border-blue-500/20 text-white transition hover:bg-blue-500/30">
     Hablemos 
   </button>
+
 
         </nav>
 
