@@ -2,9 +2,7 @@ import './App.css'
 import Header from "./componentes/header";
 import Hero from "./componentes/hero";
 import Services from "./componentes/servicies";
-import Projects from "./componentes/project";
 import Footer from  "./componentes/footer"
-import PricingSoftware from "./componentes/landin"
 import Features from './componentes/feature';
 import ContactCard from './componentes/ContactCard';
 import  Procesos  from './componentes/procesos';
