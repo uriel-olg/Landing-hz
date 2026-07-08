@@ -1,13 +1,16 @@
 import './App.css'
-import Header from "./header";
-import Hero from "./hero";
-import Services from "./servicies";
-import Projects from "./project";
-import Footer from  "./footer"
-import PricingSoftware from "./landin"
-import Features from './feature';
-import ContactCard from './ContactCard';
-  
+import Header from "./componentes/header";
+import Hero from "./componentes/hero";
+import Services from "./componentes/servicies";
+import Projects from "./componentes/project";
+import Footer from  "./componentes/footer"
+import PricingSoftware from "./componentes/landin"
+import Features from './componentes/feature';
+import ContactCard from './componentes/ContactCard';
+import  Procesos  from './componentes/procesos';
+import Tecnologias from './componentes/tecnologias';
+import Cta from './componentes/cta';
+
 function App() {
   
   return (
@@ -16,8 +19,11 @@ function App() {
       <Hero />
       <Services />
       <Features></Features>
-      <Projects />
-      <PricingSoftware></PricingSoftware>
+      <Procesos></Procesos>
+      <Tecnologias></Tecnologias>
+      {/* <Projects /> */}
+      {/* <PricingSoftware></PricingSoftware> */}
+      <Cta></Cta>
       <ContactCard wsp="2604230590" facebook='asd' instagram='asd' email='olguriel@gmail.com'/>
       <Footer />
     </>
