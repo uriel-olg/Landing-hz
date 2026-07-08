@@ -32,7 +32,9 @@ const services = [
 ];
 
 export default function Services() {
+
   return (
+    
     <section
       id="servicios"
       className="relative overflow-hidden bg-[#09131e] py-28 text-white"
@@ -43,7 +45,6 @@ export default function Services() {
       <div className="relative mx-auto max-w-7xl px-6">
 
         {/* Encabezado */}
-
         <div className="mx-auto max-w-3xl text-center">
 
           <span className="inline-flex rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-400">

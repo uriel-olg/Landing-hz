@@ -39,7 +39,7 @@ const process = [
 export default function Procesos() {
   return (
     <section
-      id="proceso"
+      id="procesos"
       className="bg-[#09131e]  py-24 text-white"
     >
       <div className="max-w-7xl mx-auto px-6">

@@ -2,7 +2,7 @@ const phone = 542604230590;
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#060B14] text-white p-10">
+    <section id="home" className="relative overflow-hidden bg-[#060B14] text-white p-10">
       {/* Efectos de fondo */}
       <div className="absolute left-0 top-20 h-80 w-80 rounded-full bg-blue-600/20 blur-[150px]" />
       <div className="absolute right-0 bottom-10 h-96 w-96 rounded-full bg-cyan-500/10 blur-[180px]" />
