@@ -128,9 +128,9 @@ export default function Header() {
               Contacto
             </a>
 
-            <button className="mt-2 rounded-xl bg-blue-600 py-3 font-semibold text-white transition hover:bg-blue-500">
+            <a href={`https://wa.me/${phone}?text=Hola,%20quiero%20solicitar%20un%20presupuesto`} className="mt-2 rounded-xl bg-blue-600 py-3 font-semibold text-white transition text-center hover:bg-blue-500">
               Contactanos
-            </button>
+            </a>
 
           </nav>
         )}
