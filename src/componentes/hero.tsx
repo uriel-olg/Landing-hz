@@ -1,8 +1,60 @@
 const phone = 542604230590;
 
+
+
+import {Clock3,Sparkles,ArrowRight,
+  MonitorSmartphone,
+  Globe,
+  Headset,
+  Gauge,
+  Wrench,
+  Cpu,
+} from "lucide-react";
+
+
+const quickServices = [
+  {
+    title: "Landing Pages",
+    icon: MonitorSmartphone,
+  },
+  {
+    title: "Sitios Web",
+    icon: Globe,
+  },
+  {
+    title: "Soporte Técnico",
+    icon: Headset,
+  },
+  {
+    title: "Optimización",
+    icon: Gauge,
+  },
+  {
+    title: "Mantenimiento",
+    icon: Wrench,
+  },
+  {
+    title: "Actualización",
+    icon: Cpu,
+  },
+];
+
+
 export default function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden bg-[#060B14] text-white p-10">
+    <section
+    id="home"
+  className="
+    relative
+    overflow-hidden
+    bg-[#060B14]
+    bg-[url('Landing-hz/public/hero-bg.webp.png')]
+    bg-cover
+    bg-center
+    bg-no-repeat
+    pb-20
+  "
+>
       {/* Efectos de fondo */}
       <div className="absolute left-0 top-20 h-80 w-80 rounded-full bg-blue-600/20 blur-[150px]" />
       <div className="absolute right-0 bottom-10 h-96 w-96 rounded-full bg-cyan-500/10 blur-[180px]" />
@@ -21,7 +73,7 @@ export default function Hero() {
             </span>
 
             {/* Título */}
-            <h1 className="mt-8 text-5xl font-extrabold leading-tight lg:text-6xl">
+            <h1 className="mt-8 text-5xl font-extrabold leading-tight lg:text-6xl text-white">
               Impulsamos tu negocio con
               <span className="text-blue-500"> tecnología </span>
               moderna.
@@ -35,87 +87,256 @@ export default function Hero() {
             </p>
 
             {/* Botones */}
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+<div className="mt-12 flex flex-col gap-4 sm:flex-row">
 
-              <a
-                href={`https://wa.me/${phone}?text=Hola,%20quiero%20solicitar%20un%20presupuesto`}
-                className="rounded-xl bg-blue-600 px-8 py-4 text-center font-semibold transition-all duration-300 hover:bg-blue-500 hover:shadow-xl hover:shadow-blue-500/30"
-              >
-                Solicitar presupuesto
-              </a>
+  {/* Botón principal */}
+  <a
+    href={`https://wa.me/${phone}?text=Hola,%20quiero%20solicitar%20un%20presupuesto`}
+    className="
+      group
+      inline-flex
+      items-center
+      justify-center
+      gap-3
+      rounded-2xl
+      bg-gradient-to-r
+      from-blue-600
+      to-blue-500
+      px-8
+      py-4
+      font-semibold
+      text-white
+      shadow-lg
+      shadow-blue-600/20
+      transition-all
+      duration-300
+      hover:-translate-y-1
+      hover:shadow-2xl
+      hover:shadow-blue-500/30
+      active:scale-95
+    "
+  >
+    <Sparkles
+      size={18}
+      className="transition-transform duration-300 group-hover:rotate-12"
+    />
 
-              <a
-                href="#servicios"
-                className="rounded-xl border border-white/10 bg-white/5 px-8 py-4 text-center font-semibold backdrop-blur transition hover:border-blue-500 hover:bg-white/10"
-              >
-                Ver servicios
-              </a>
+    Solicitar presupuesto
 
-            </div>
+    <ArrowRight
+      size={18}
+      className="transition-transform duration-300 group-hover:translate-x-1"
+    />
+  </a>
+
+  {/* Botón secundario */}
+  <a
+    href="#servicios"
+    className="
+      group
+      inline-flex
+      items-center
+      justify-center
+      gap-3
+      rounded-2xl
+      border
+      border-white/10
+      bg-white/5
+      px-8
+      py-4
+      font-semibold
+      text-white
+      backdrop-blur-xl
+      transition-all
+      duration-300
+      hover:-translate-y-1
+      hover:border-blue-500/40
+      hover:bg-white/10
+    "
+  >
+    Ver servicios
+
+    <ArrowRight
+      size={18}
+      className="transition-transform duration-300 group-hover:translate-x-1"
+    />
+  </a>
+
+</div>
+
 
             {/* Servicios rápidos */}
 
-            <div className="mt-12 flex flex-wrap gap-3">
+<div className="mt-14 flex flex-wrap gap-4">
+  {quickServices.map((service) => {
+    const Icon = service.icon;
 
-              {[
-                "Landing Pages",
-                "Sitios Web",
-                "Soporte Técnico",
-                "Optimización",
-                "Mantenimiento",
-                "Actualización",
-              ].map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-300 backdrop-blur"
-                >
-                  {item}
-                </span>
-              ))}
+    return (
+      <div
+        key={service.title}
+        className="
+          group
+          flex
+          items-center
+          gap-3
+          rounded-full
+          border
+          border-blue-500/20
+          bg-blue-500/10
+          px-5
+          py-3
+          backdrop-blur-xl
+          shadow-sm
+          shadow-blue-500/10
+          transition-all
+          duration-300
+          hover:-translate-y-1
+          hover:border-blue-400/40
+          hover:bg-blue-500/15
+          hover:shadow-l
+          hover:shadow-blue-500/20
+        "
+      >
+        <div
+          className="
+            flex
+            h-8
+            w-8
+            items-center
+            justify-center
+            rounded-full
+            bg-blue-500/20
+          "
+        >
+          <Icon
+            size={16}
+            className="text-blue-400"
+          />
+        </div>
 
-            </div>
+        <span className="text-sm font-medium text-gray-100">
+          {service.title}
+        </span>
+      </div>
+    );
+  })}
+</div>
 
             {/* Estadísticas */}
 
-            <div className="mt-14 grid grid-cols-3 gap-5" >
+            <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-3">
 
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+  {/* Card 1 */}
 
-                <h3 className="text-center wrap-anywhere md:text-3xl font-bold text-blue-400">
-                  Atencion  
-                </h3>
+  <div
+    className="
+      group
+      relative
+      overflow-hidden
+      rounded-2xl
+      border
+      border-blue-500/40
+      bg-white/5
+      p-6
+      backdrop-blur-xl
+      transition-all
+      duration-300
+      hover:-translate-y-2
+      hover:border-blue-500/40
+      hover:shadow-xl
+      hover:shadow-blue-500/10
+      
+    "
+  >
+    {/* Glow */}
+    <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-blue-500/10 blur-3xl transition group-hover:bg-blue-500/20" />
 
-                <p className="text-center mt-2 md:text-sm text-gray-400">
-                  24hs
-                </p>
+    <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-500/10">
+      <Clock3 size={28} className="text-blue-400" />
+    </div>
 
-              </div>
+    <h3 className="text-3xl font-bold text-white">
+      24 hs
+    </h3>
 
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+    <p className="mt-2 text-sm text-gray-400">
+      Tiempo de respuesta
+    </p>
+  </div>
 
-                <h3 className="text-center md:text-3xl font-bold text-blue-400">
-                  24/7
-                </h3>
+  {/* Card 2 */}
 
-                <p className="wrap-anywhere mt-2 md:text-sm text-gray-400">
-                  Soporte
-                </p>
+  <div
+    className="
+      group
+      relative
+      overflow-hidden
+      rounded-2xl
+      border
+       border-blue-500/40
+      bg-white/5
+      p-6
+      backdrop-blur-xl
+      transition-all
+      duration-300
+      hover:-translate-y-2
+      hover:border-blue-500/40
+      hover:shadow-xl
+      hover:shadow-blue-500/10
+    "
+  >
+    <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-cyan-500/10 blur-3xl transition group-hover:bg-cyan-500/20" />
 
-              </div>
+    <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-500/10">
+      <Headset size={28} className="text-blue-400" />
+    </div>
 
-              <div className="flex flex-col h-full rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+    <h3 className="text-3xl font-bold text-white">
+      24/7
+    </h3>
 
-                <h3 className="md:text-3xl font-bold text-blue-400 ">
-                  100%
-                </h3>
+    <p className="mt-2 text-sm text-gray-400">
+      Soporte técnico
+    </p>
+  </div>
 
-                <p className="wrap-anywhere mt-2 md:text-sm text-gray-400 ">
-                  Personalizado
-                </p>
+  {/* Card 3 */}
 
-              </div>
+  <div
+    className="
+      group
+      relative
+      overflow-hidden
+      rounded-2xl
+      border
+      border-blue-500/40
+      bg-white/5
+      p-6
+      backdrop-blur-xl
+      transition-all
+      duration-300
+      hover:-translate-y-2
+      hover:border-blue-500/40
+      hover:shadow-xl
+      hover:shadow-blue-500/10
+    "
+  >
+    <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-indigo-500/10 blur-3xl transition group-hover:bg-indigo-500/20" />
 
-            </div>
+    <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-500/10">
+      <Sparkles size={28} className="text-blue-400" />
+    </div>
+
+    <h3 className="text-3xl font-bold text-white">
+      100%
+    </h3>
+
+    <p className="mt-2 text-sm text-gray-400">
+      Soluciones a medida
+    </p>
+  </div>
+
+</div>
 
           </div>
 
