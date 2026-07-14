@@ -1,3 +1,4 @@
+
 const phone = 542604230590;
 
 
@@ -349,7 +350,7 @@ export default function Hero() {
 
             {/* Imagen principal */}
             <img
-              src="/hero.png"
+              src="/web-dark.svg"
               alt="HZ Software"
               className="relative w-full max-w-xl drop-shadow-[0_25px_80px_rgba(59,130,246,0.35)]"
             />
